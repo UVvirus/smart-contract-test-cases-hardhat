@@ -19,7 +19,7 @@ describe.only("Staking Token Contract", function() {
    
    
    //deploying staking contract
-   TokenStaking = await ethers.getContractFactory("ICadeTokenStaking");
+   TokenStaking = await ethers.getContractFactory("TokenStaking");
    TokenStaking = await TokenStaking.deploy(Token_deploy.address,0,1,1, 2592000);
    
    
